@@ -1,4 +1,4 @@
-#Image modal exercise
+# Image modal exercise
 - ReactJS Components
 - State & Properties
 - Event Handling
