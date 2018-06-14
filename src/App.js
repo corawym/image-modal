@@ -26,12 +26,15 @@ class App extends Component {
     this.setState({showModal: true, modalItem: item})
   }
 
-  render() {
+  closeModal = (e) => {
+    this.setState({showModal: false})
+  }
 
+  render() {
     return (
       <div className="App">
         <Grids gridData={this.state.data} gridItemClick={this.gridItemClick}/>
-        {this.state.showModal && <Modal modalItem={this.state.modalItem}/>}
+        {this.state.showModal && <Modal modalItem={this.state.modalItem} closeModal={this.closeModal}/>}
       </div>
     );
   }
