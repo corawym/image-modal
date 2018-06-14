@@ -1,3 +1,7 @@
+.App {
+  box-sizing: border-box;
+}
+
 .Grids {
   display: flex;
   flex-wrap: wrap;
@@ -9,8 +13,38 @@
 
 .GridItem {
   flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .GridItem img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  border: 1rem solid white;
+  background-color: white;
+  width: 50%;
+  max-width: 600px;
+}
+
+.Modal img {
+  display: block;
   width: 100%;
 }
+
+.Modal p {
+  text-align: center;
+}
+
